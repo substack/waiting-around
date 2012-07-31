@@ -1,5 +1,4 @@
 var yarn = require('./yarn');
-var $ = require('jquery-browserify');
 var createSpot = require('./lib/spot');
 
 module.exports = function (images, opts) {
@@ -57,7 +56,9 @@ Queue.prototype.resize = function (width, height) {
 
 Queue.prototype.reset = function () {
     this.lastSpot = undefined;
-    this.spots = [];
+    this.spots.splice(0).forEach(function (s) {
+        s.remove();
+    });
 };
 
 Queue.prototype.spot = function (spot, total) {
