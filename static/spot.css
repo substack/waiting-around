@@ -1,0 +1,32 @@
+.spot {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.label {
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(20,28,72);
+    text-align: center;
+    margin: auto;
+    width: 0px;
+    
+    opacity: 0.8;
+    background-color: rgb(200,220,240);
+}
+
+.spot.me .label {
+    opacity: 1;
+    background-color: rgb(240,220,200);
+    cursor: pointer;
+}
+
+.image {
+    background-color: green;
+    color: yellow;
+}
+
+img {
+    margin-top: 60px;
+}
