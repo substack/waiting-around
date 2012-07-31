@@ -22,11 +22,8 @@
     cursor: pointer;
 }
 
-.image {
-    background-color: green;
-    color: yellow;
-}
-
 img {
-    margin-top: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }

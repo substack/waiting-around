@@ -14,28 +14,12 @@ var createQueue = require('../');
 var queue = createQueue(files);
 queue.appendTo(document.body);
 
-var spot = 15;
-var total = 20;
+var spot = 35;
+var total = 80;
 var iv = setInterval(function () {
     spot --;
     total --;
     if (spot === 0) return clearInterval(iv);
     
     queue.spot(spot, total);
-    
-    if (Math.random() > 0.7) {
-        setTimeout(function () {
-            total ++;
-        }, 500 * Math.random());
-    }
-}, 500);
-
-/*
-setTimeout(function f () {
-    if (queue.spots.length === 0) return;
-    var s = queue.spots[Math.floor(Math.random() * queue.spots.length)];
-    var c = String.fromCharCode(Math.floor(97 + 26 * Math.random()));
-    s.showMessage(c);
-    setTimeout(f, Math.random() * 6000);
-}, 2000);
-*/
+}, 250);

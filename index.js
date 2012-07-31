@@ -13,7 +13,7 @@ function Queue (images, opts) {
     
     if (!opts) opts = {};
     self.width = opts.width || window.innerWidth || 800;
-    self.height = opts.height || window.innerHeight || 400;
+    self.height = opts.height || 300;
     
     if (Array.isArray(images)) {
         self.image = function () {
@@ -90,14 +90,22 @@ Queue.prototype.spot = function (spot, total) {
         ;
     }
     
+    if (!self._me) {
+        self.spots.forEach(function (s, n) {
+            if (n === spot - 1) {
+                self._me = s;
+                s.setType('me');
+                s.showLabel('');
+            }
+            else {
+                s.setType('other');
+            }
+        });
+    }
+    
     self.spots.forEach(function (s, n) {
-        if (n === spot - 1) {
-            s.setType('me');
-            s.showLabel('');
-        }
-        else {
-            s.setType('other');
-        }
         s.spot(n);
     });
+    
+    self.lastSpot = spot;
 };
