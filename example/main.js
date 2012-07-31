@@ -11,8 +11,12 @@ var files = {
 };
 
 var createQueue = require('../');
-var queue = createQueue(files);
+var queue = createQueue(files, { height : 300 });
 queue.appendTo(document.body);
+
+window.addEventListener('resize', function () {
+    queue.resize(window.innerWidth, 300);
+});
 
 var spot = 35;
 var total = 80;
