@@ -1,7 +1,7 @@
 {
     "name" : "waiting-around",
     "version" : "0.0.0",
-    "description" : "ui code to wait around in a queue",
+    "description" : "wait around in a queue with this ui widget",
     "main" : "index.js",
     "bin" : {},
     "directories" : {
@@ -21,6 +21,7 @@
     },
     "homepage" : "https://github.com/substack/waiting-around",
     "keywords" : [
+        "widget",
         "ui",
         "browserify",
         "yarnify",
