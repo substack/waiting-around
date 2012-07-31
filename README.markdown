@@ -4,6 +4,8 @@ Wait around in a big queue, like this:
 
 ![waiting around](http://substack.net/images/screenshots/waiting_around.png)
 
+[live demo](http://substack.net/projects/waiting-around/)
+
 # example
 
 This module is a browser widget. Just whip up a main.js like this:
