@@ -4,7 +4,7 @@ Wait around in a big queue, like this:
 
 ![waiting around](http://substack.net/images/screenshots/waiting_around.png)
 
-[live demo](http://substack.net/projects/waiting-around/)
+[See the live demo.](http://substack.net/projects/waiting-around/)
 
 # example
 
