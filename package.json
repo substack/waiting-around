@@ -1,0 +1,35 @@
+{
+    "name" : "waiting-around",
+    "version" : "0.0.0",
+    "description" : "ui code to wait around in a queue",
+    "main" : "index.js",
+    "bin" : {},
+    "directories" : {
+        "example" : "example",
+        "test" : "test"
+    },
+    "dependencies" : {
+        "yarnify" : "~0.5.1",
+        "jquery-browserify" : "1.x.x"
+    },
+    "scripts" : {
+        "install" : "yarnify static/*.html static/*.css -o yarn.js"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/substack/waiting-around.git"
+    },
+    "homepage" : "https://github.com/substack/waiting-around",
+    "keywords" : [
+        "ui",
+        "browserify",
+        "yarnify",
+        "waiting"
+    ],
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    },
+    "license" : "MIT"
+}
