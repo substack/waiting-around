@@ -1,4 +1,4 @@
-var yarn = require('./yarn');
+var yarn = require('./static/yarn');
 var createSpot = require('./lib/spot');
 
 module.exports = function (images, opts) {
